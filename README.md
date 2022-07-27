@@ -29,7 +29,7 @@
 
 ## Introduction
 
-RadixLib is an API wrapper for the Radix Gateway API which allows for a quick, easy, and pythonic way to interact with the Radix blockchain directly from python. The following are some of the features offered in this python package:
+RadixLib is an API wrapper for the Radix Gateway API which allows for a quick, easy, and pythonic way to interact with the Radix blockchain directly from python. The following are some features offered in this python package:
 
 * Connecting to the Radix blockchain through the Gateway API.
 * Connecting to custom Radix networks (i.e. stokenet, localnet, devnets or any custom network.)
@@ -40,7 +40,7 @@ RadixLib is an API wrapper for the Radix Gateway API which allows for a quick, e
 * Creating signers from random mnemonic phrases.
 * A powerful derivations module for all kinds of derivations needed in Radix.
 
-The features listed above are only a small subset of the features offered by this python package. This wrapper is fully compatible with the Gateway API which means that all of the operations that can be done through the Gateway API are supported by this package. This package offerers so much more and can in theory be used to build a python version of the [Radix desktop wallet](https://github.com/radixdlt/olympia-wallet).
+The features listed above are only a small subset of the features offered by this python package. This wrapper is fully compatible with the Gateway API which means that all the operations that can be done through the Gateway API are supported by this package. This package offers so much more and can in theory be used to build a python version of the [Radix desktop wallet](https://github.com/radixdlt/olympia-wallet).
 
 ## Installing the Package
 
@@ -57,7 +57,7 @@ After running the above command, you should find that the radixlib package is no
 
 ### Method 2: Setting up the package from source
 
-To setup this package from the source code you may begin by cloning this repository to your local machine and then running the setup script. You may do that through the following commands:
+To set up this package from the source code you may begin by cloning this repository to your local machine and then running the setup script. You may do that through the following commands:
 
 ```shell
 git clone -b master https://github.com/0xOmarA/RadixLib
@@ -71,19 +71,19 @@ After installing the package through one of the methods outlined above, you can 
 
 In this section of the document, a series of simple examples are given to help you get started using this package. More detailed and indepth examples are provided in the [examples](https://github.com/0xOmarA/RadixLib/tree/master/examples) directory.
 
-With the package installed, you are now ready to begin using this package and the functionality that it has. One thing to note is that the name that this package uses in python is the same as the name it uses on Github and on mypy; meaning, that if we were to import this package into our python script, we may do so using the following code:
+With the package installed, you are now ready to begin using this package and the functionality that it has. One thing to note is that the name that this package uses in python is the same as the name it uses on GitHub and on mypy; meaning, that if we were to import this package into our python script, we may do so using the following code:
 ```python
 import radixlib
 ```
 
-However, throughout this code and in the examples, the name of the package import is changed to `radix` upon import to make the package somewhat easier to use a little bit less verbose. So, you will often see this package imported in the following manner:
+However, throughout this code and in the examples, the name of the package import is changed to `radix` upon import to make the package somewhat easier to use a little less verbose. So, you will often see this package imported in the following manner:
 ```python
 import radixlib as radix
 ```
 
 ### Loading Your Wallet 
 
-The very first example that we will be looking at here is how can you load your wallet using this packahe into your python code. There are three main methods which you may use to load your wallet:
+The very first example that we will be looking at here is how can you load your wallet using this package into your python code. There are three main methods which you may use to load your wallet:
 
 * Through the mnemonic phrase
 * Through the seed
@@ -129,7 +129,7 @@ def main() -> None:
     network: radix.network.Network = radix.network.MAINNET
 
     # The seed phrase that the signer will be using for the wallet
-    # Don't worry, this is the seed phrase of the abandon wallet so I'm not exposing any sensitive 
+    # Don't worry, this is the seed phrase of the abandon wallet, so I'm not exposing any sensitive 
     # info ;)
     seed: str = "94cfb81f135f8d85d787a84173cf1e9fc51792f3723e2b93a162fa57a03370fd80971d026eed300544116dfee4d5b375c77ea86b65dfd44e2ecda58044684fe0"
 
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     main()
 ```
 
-The only section that was added in this code is a call to the `wallet.get_account_balances` method which gets the balances of all of the tokens that the account currently holds. 
+The only section that was added in this code is a call to the `wallet.get_account_balances` method which gets the balances of all the tokens that the account currently holds. 
 
 ### Query for Account Transactions
 
@@ -253,10 +253,10 @@ Getting the last 30 transactions that our account was involved in was as simple 
 
 ### Additional More Detailed Examples
 
-The examples that you've seen here are some simple examples which might be helpful for you to get started using this package. You might want to checkout the examples in the [examples](https://github.com/0xOmarA/RadixLib/tree/master/examples) directory of the repo for more detailed examples where more interesting concepts such as [sending transactions](https://github.com/0xOmarA/RadixLib/blob/master/examples/1-%20sending%20tokens/main.py) is showcased and explained. 
+The examples that you've seen here are some simple examples which might be helpful for you to get started using this package. You might want to check the examples in the [examples](https://github.com/0xOmarA/RadixLib/tree/master/examples) directory of the repo for more detailed examples where more interesting concepts such as [sending transactions](https://github.com/0xOmarA/RadixLib/blob/master/examples/1-%20sending%20tokens/main.py) is showcased and explained. 
 
 ## Acknowledgement
-Thank you to everybody who has helped make this package possible from the Radix team and from the community. Special thanks to Stuart from [RadixPool.com](https://www.RadixPool.com) for his amazing efforts and write ups on the technical side of Radix.
+Thank you to everybody who has helped make this package possible from the Radix team and from the community. Special thanks to Stuart from [RadixPool.com](https://www.RadixPool.com) for his amazing efforts and write-ups on the technical side of Radix.
 
 ## Licence: MIT
 
@@ -275,7 +275,7 @@ copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
